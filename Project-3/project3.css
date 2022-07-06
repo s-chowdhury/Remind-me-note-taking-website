@@ -1,0 +1,184 @@
+body{
+    background: url('background.png')  no-repeat center center/cover;
+    margin: 0;
+    padding: 0;
+}
+/* Navigation bar */
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    position: static;
+}
+#header{
+    display: flex;
+    color: white;
+}
+#navbar img{
+    height: 40px;
+    padding: 0px 17px;
+    padding-top: 5px;
+}
+#navbar p{
+    margin: 0;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    color: black;
+    background-color: white;
+    margin-bottom: 10px;
+    margin-left: 4px;
+}
+#navbar ul{
+    list-style: none;
+}
+#navbar ul li a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: white;
+    padding: 6px 26px;
+}
+#searchBox{
+    padding: 10px;
+}
+#text{
+    padding: 5px;
+    width: 200px;
+    height: 20px;
+    border-radius: 8px;
+}
+#btn{
+    padding: 5px 10px;
+    background-color: rgb(196, 196, 34);
+    border-radius: 6px;
+    border-radius: 2px solid black;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+#btn:hover{
+    background-color: yellow;
+}
+h1{
+    margin: 25px;
+}
+/* Text area*/
+#container{
+    display: flex;
+    justify-content: center;
+    margin: 5px 10px;
+}
+#container div{
+    border: 2px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    margin-top: 30px;
+    background-color: #43318dc1;
+    border-radius: 20px;
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+#container h3{
+    margin: 4px auto;
+    margin-bottom: 0;
+    color: white;
+
+}
+#container textarea{
+    margin: 3px auto;;
+    width: 70%;
+    padding: 7px;
+    border-radius: 10px;
+}
+#submit{
+    width: 20%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: wheat;
+    height: 26px;
+    border-radius: 7px;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+#submit:hover{
+    color: white;
+    background-color: green;
+    box-shadow: 4px 4px 4px 4px rgb(22, 143, 177);
+}
+/* Notes section */
+#notes{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+}
+.notes{
+    border: 2px solid black;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    padding: 4px;
+    margin: 8px;
+    background-color: #85dcb8bb;
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.notes h3, p, button{
+    margin: auto;
+}
+.notes .heading{
+    color: white;
+    padding: 5px;
+    background-color: rgba(0, 255, 153, 0.911);
+}
+.impNotes .heading{
+    color: white;
+    padding: 5px;
+    background-color: rgba(0, 42, 255, 0.911);
+}
+.impNotes{
+    border: 2px solid black;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    padding: 4px;
+    margin: 8px;
+    background-color: #25ac35b3;
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.impNotes h3, p, button{
+    margin: auto;
+}
+.important{
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 4px;
+    background-color: rgb(68, 68, 124);
+    font-family: 'Oleo Script Swash Caps', cursive;
+    margin-top: 3px;
+    margin-bottom: 3px ;
+    color: black;
+    transition: all 0.3s ease-in;
+}
+.important:hover{
+    background-color: rgb(73, 192, 73);
+    color: white;
+}
+.delete{
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 4px;
+    background-color: rgb(68, 68, 124);
+    font-family: 'Oleo Script Swash Caps', cursive;
+    margin-top: 11px;
+    margin-bottom: 9px;
+    color: black;
+    transition: all 0.3s ease-in;
+}
+.delete:hover{
+    background-color: red;
+    color: white;
+}
